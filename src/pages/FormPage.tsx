@@ -21,7 +21,6 @@ const FormPage = () => {
         await axios.post('http://localhost:8000/emotion/classify', {
             teks: formData.teks,
         }).then(function (response) {
-            console.log(response);
             navigate("/emotion", { state: response.data })
         }).catch(function (error) {
             console.log(error);
