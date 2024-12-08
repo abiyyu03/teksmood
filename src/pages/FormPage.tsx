@@ -18,7 +18,7 @@ const FormPage = () => {
 
     const processForm = async (event: { preventDefault: () => void; }) => {
         event.preventDefault();
-        await axios.post('http://localhost:8000/emotion/classify', {
+        await axios.post('https://0d2f-114-124-213-11.ngrok-free.app/emotion/classify', {
             teks: formData.teks,
         }).then(function (response) {
             navigate("/emotion", { state: response.data })
