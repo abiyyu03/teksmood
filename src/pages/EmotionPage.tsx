@@ -9,13 +9,13 @@ const EmotionPage = () => {
     const emoticonSelector = (label: string) => {
         switch (label) {
             case 'bahagia':
-                return "../../public/emojis/smile.png";
+                return "../assets/emojis/smile.png";
             case 'sedih':
-                return "../../public/emojis/sob.png";
+                return "../assets/emojis/sob.png";
             case 'marah':
-                return "../../public/emojis/rage.png";
+                return "../assets/emojis/rage.png";
             case 'kecewa':
-                return "../../public/emojis/weary.png";
+                return "../assets/emojis/weary.png";
             default:
                 return "#";
         }
