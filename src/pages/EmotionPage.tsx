@@ -1,6 +1,10 @@
 import { Link, useLocation } from "react-router";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
+import smileEmoji from "../../src/assets/emojis/smile.png";
+import sobEmoji from "../../src/assets/emojis/sob.png";
+import rageEmoji from "../../src/assets/emojis/rage.png";
+import wearyEmoji from "../../src/assets/emojis/weary.png";
 
 const EmotionPage = () => {
     const location = useLocation();
@@ -9,13 +13,13 @@ const EmotionPage = () => {
     const emoticonSelector = (label: string) => {
         switch (label) {
             case 'bahagia':
-                return "../../src/assets/emojis/smile.png";
+                return smileEmoji;
             case 'sedih':
-                return "../../src/assets/emojis/sob.png";
+                return sobEmoji;
             case 'marah':
-                return "../../src/assets/emojis/rage.png";
+                return rageEmoji;
             case 'kecewa':
-                return "../../src/assets/emojis/weary.png";
+                return wearyEmoji;
             default:
                 return "#";
         }
