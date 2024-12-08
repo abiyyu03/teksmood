@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowLeft, faCamera } from "@fortawesome/free-solid-svg-icons";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const EmotionPage = () => {
     const location = useLocation();
@@ -73,7 +73,7 @@ const EmotionPage = () => {
                             <div className="flex flex-col text-center justify-center" key={key}>
                                 <h3 className="text-white font-medium">{key}</h3>
                                 <img src={emoticonSelector(key)} className="w-2/6 mx-auto grayscale" alt="emoji" />
-                                <h3 className="text-white font-bold">{value}%</h3>
+                                <h3 className="text-white font-bold">{(value as number).toFixed(2)}%</h3>
                             </div>
                         ))}
                     </div>
