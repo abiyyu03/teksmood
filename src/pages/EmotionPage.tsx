@@ -1,10 +1,10 @@
 import { Link, useLocation } from "react-router";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import smileEmoji from "../../src/assets/emojis/smile.png";
-import sobEmoji from "../../src/assets/emojis/sob.png";
-import rageEmoji from "../../src/assets/emojis/rage.png";
-import wearyEmoji from "../../src/assets/emojis/weary.png";
+import smileEmoji from "../../public/emojis/smile.png";
+import sobEmoji from "../../public/emojis/sob.png";
+import rageEmoji from "../../public/emojis/rage.png";
+import wearyEmoji from "../../public/emojis/weary.png";
 
 const EmotionPage = () => {
     const location = useLocation();
